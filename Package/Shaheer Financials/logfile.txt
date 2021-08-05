@@ -1,0 +1,183 @@
+Setup Factory 5.0 Installation Log
+==================================
+Date/Time: 25-Jul-02  04:38:21 PM
+
+[Execute Commands 0]
+
+[File Operations 0]
+
+[Execute Commands 1]
+
+[File Operations 1]
+
+[Installing from Archive]
+Installing C:\Program Files\FSIB Financials\ADV_Reports\ADV_AmortizedHist.rpt
+Installing C:\Program Files\FSIB Financials\ADV_Reports\ADV_ClntShdl.rpt
+Installing C:\Program Files\FSIB Financials\ADV_Reports\ADV_Holdings.rpt
+Installing C:\Program Files\FSIB Financials\ADV_Reports\Adv_Receipt.rpt
+Installing C:\Program Files\FSIB Financials\ADV_Reports\ADV_SimpleHist.rpt
+Installing C:\Program Files\FSIB Financials\ADV_Reports\ADV_Status.rpt
+Installing C:\Program Files\FSIB Financials\COD_Reports\COI_AcctHist.rpt
+Installing C:\Program Files\FSIB Financials\COD_Reports\COI_Holdings.rpt
+Installing C:\Program Files\FSIB Financials\COD_Reports\COI_Mushholding.rpt
+Installing C:\Program Files\FSIB Financials\COD_Reports\COI_PmtAdvices.rpt
+Installing C:\Program Files\FSIB Financials\COD_Reports\COI_PmtAdvices1.rpt
+Installing C:\Program Files\FSIB Financials\COD_Reports\COI_PmtAdvices2.rpt
+Installing C:\Program Files\FSIB Financials\COD_Reports\COI_ProjectedCFlow.rpt
+Installing C:\Program Files\FSIB Financials\Customer_Reports\CustomerInfo.rpt
+Installing C:\Program Files\FSIB Financials\GL_Reports\ChartofAccounts.rpt
+Installing C:\Program Files\FSIB Financials\GL_Reports\ChartofAccounts_Old.rpt
+Installing C:\Program Files\FSIB Financials\GL_Reports\CustReport.rpt
+Installing C:\Program Files\FSIB Financials\GL_Reports\EditList.rpt
+Installing C:\Program Files\FSIB Financials\GL_Reports\Gl_Notes.rpt
+Installing C:\Program Files\FSIB Financials\GL_Reports\GlBooks.rpt
+Installing C:\Program Files\FSIB Financials\GL_Reports\GroupDetal.rpt
+Installing C:\Program Files\FSIB Financials\GL_Reports\Ledger.rpt
+Installing C:\Program Files\FSIB Financials\GL_Reports\OpBalance.rpt
+Installing C:\Program Files\FSIB Financials\GL_Reports\PLReport.rpt
+Installing C:\Program Files\FSIB Financials\GL_Reports\TrialBalance(Old).rpt
+Installing C:\Program Files\FSIB Financials\GL_Reports\TrialBalance.rpt
+Installing C:\Program Files\FSIB Financials\GL_Reports\Vchr_Print.rpt
+Installing C:\Program Files\FSIB Financials\GL_Reports\VchrList.rpt
+Installing C:\Program Files\FSIB Financials\Inflow_Reports\IF_Cash.rpt
+Installing C:\Program Files\FSIB Financials\Inflow_Reports\Inflow_Recpt.rpt
+Installing C:\Program Files\FSIB Financials\Inflow_Reports\InflowReport2.rpt
+Installing C:\Program Files\FSIB Financials\Inflow_Reports\RelzReport.rpt
+Installing C:\Program Files\FSIB Financials\LMS_Reports\Aging.rpt
+Installing C:\Program Files\FSIB Financials\LMS_Reports\AInterShdl.rpt
+Installing C:\Program Files\FSIB Financials\LMS_Reports\BalConfirm.rpt
+Installing C:\Program Files\FSIB Financials\LMS_Reports\ClntShdl.rpt
+Installing C:\Program Files\FSIB Financials\LMS_Reports\InterShdl.rpt
+Installing C:\Program Files\FSIB Financials\LMS_Reports\LM_AssetExp.rpt
+Installing C:\Program Files\FSIB Financials\LMS_Reports\LM_Bills.rpt
+Installing C:\Program Files\FSIB Financials\LMS_Reports\LM_CustComm.rpt
+Installing C:\Program Files\FSIB Financials\LMS_Reports\LM_EntityExp.rpt
+Installing C:\Program Files\FSIB Financials\LMS_Reports\Lm_leaseinfo.rpt
+Installing C:\Program Files\FSIB Financials\LMS_Reports\Lm_payment.rpt
+Installing C:\Program Files\FSIB Financials\LMS_Reports\LM_Project.rpt
+Installing C:\Program Files\FSIB Financials\LMS_Reports\Lm_Recvable.rpt
+Installing C:\Program Files\FSIB Financials\LMS_Reports\Lm_Recvable1.rpt
+Installing C:\Program Files\FSIB Financials\LMS_Reports\LM_SectorExp.rpt
+Installing C:\Program Files\FSIB Financials\LMS_Reports\ProjectionReport.rpt
+Installing C:\Program Files\FSIB Financials\LMS_Reports\RecovrReport.rpt
+Installing C:\Program Files\FSIB Financials\Photos\Admin.bmp
+Installing C:\Program Files\FSIB Financials\servername.mdb
+Installing C:\Program Files\FSIB Financials\iconb.ico
+Installing C:\Program Files\FSIB Financials\Presentation.ppt
+Installing C:\Program Files\FSIB Financials\FCM_Financials.exe
+Installing C:\WINDOWS\SYSTEM\Asycfilt.dll
+Installing C:\WINDOWS\SYSTEM\Cdo32.dll
+Installing C:\WINDOWS\SYSTEM\Comcat.dll
+Skipping C:\WINDOWS\SYSTEM\Comct332.ocx
+Installing C:\WINDOWS\SYSTEM\craxdui.dll
+Installing C:\WINDOWS\SYSTEM\Crpaig80.dll
+Installing C:\WINDOWS\SYSTEM\crpe32.dll
+Installing C:\WINDOWS\SYSTEM\Crxlat32.dll
+Installing C:\WINDOWS\SYSTEM\Cryptext.dll
+Installing C:\WINDOWS\SYSTEM\Crystl32.OCX
+Installing C:\WINDOWS\SYSTEM\dtspkg.rll
+Installing C:\WINDOWS\SYSTEM\Flexwiz.ocx
+Installing C:\WINDOWS\SYSTEM\Implode.dll
+Installing C:\WINDOWS\SYSTEM\kimsys_Finan.DDF
+Installing C:\WINDOWS\SYSTEM\Mdac_typ.exe
+Skipping C:\WINDOWS\SYSTEM\Mfc42.dll
+Installing C:\WINDOWS\SYSTEM\msado20.tlb
+Skipping C:\WINDOWS\SYSTEM\Msadodc.ocx
+Installing C:\WINDOWS\SYSTEM\msadox.dll
+Installing C:\WINDOWS\SYSTEM\Mscdrun.dll
+Skipping C:\WINDOWS\SYSTEM\mscomct2.ocx
+Installing C:\WINDOWS\SYSTEM\Mscomctl.ocx
+Skipping C:\WINDOWS\SYSTEM\mscomm32.ocx
+Installing C:\WINDOWS\SYSTEM\Mscondes.dll
+Installing C:\WINDOWS\SYSTEM\Msderun.dll
+Skipping C:\WINDOWS\SYSTEM\msflxgrd.ocx
+Skipping C:\WINDOWS\SYSTEM\Mshflxgd.ocx
+Skipping C:\WINDOWS\SYSTEM\Msmask32.ocx
+Installing C:\WINDOWS\SYSTEM\Msrdo20.dll
+Skipping C:\WINDOWS\SYSTEM\Msstdfmt.dll
+Skipping C:\WINDOWS\SYSTEM\msvbvm60.dll
+Skipping C:\WINDOWS\SYSTEM\Msvcrt.dll
+Skipping C:\WINDOWS\SYSTEM\Oleaut32.dll
+Skipping C:\WINDOWS\SYSTEM\Olepro32.dll
+Installing C:\WINDOWS\SYSTEM\P2bbnd.dll
+Installing C:\WINDOWS\SYSTEM\p2bdao.dll
+Installing C:\WINDOWS\SYSTEM\p2bxbse.dll
+Installing C:\WINDOWS\SYSTEM\p2ctdao.dll
+Installing C:\WINDOWS\SYSTEM\p2irdao.dll
+Installing C:\WINDOWS\SYSTEM\p2sifmx.dll
+Installing C:\WINDOWS\SYSTEM\P2smon.dll
+Installing C:\WINDOWS\SYSTEM\p2sodbc.dll
+Installing C:\WINDOWS\SYSTEM\p2soledb.dll
+Installing C:\WINDOWS\SYSTEM\p2sora7.dll
+Installing C:\WINDOWS\SYSTEM\p2ssql.dll
+Installing C:\WINDOWS\SYSTEM\p2ssyb10.dll
+Installing C:\WINDOWS\SYSTEM\Plugin.ocx
+Installing C:\WINDOWS\SYSTEM\Rdocurs.dll
+Installing C:\WINDOWS\SYSTEM\scrrun.dll
+Installing C:\WINDOWS\SYSTEM\Setup.exe
+Installing C:\WINDOWS\SYSTEM\Setup.Lst
+Installing C:\WINDOWS\SYSTEM\Setup1.exe
+Installing C:\WINDOWS\SYSTEM\Sscsdk80.dll
+Installing C:\WINDOWS\SYSTEM\St6unst.exe
+Installing C:\WINDOWS\SYSTEM\Stdole2.tlb
+Skipping C:\WINDOWS\SYSTEM\Tabctl32.ocx
+Installing C:\WINDOWS\SYSTEM\u252000.dll
+Installing C:\WINDOWS\SYSTEM\u25dts.dll
+Installing C:\WINDOWS\SYSTEM\u2dapp.dll
+Installing C:\WINDOWS\SYSTEM\u2ddisk.dll
+Installing C:\WINDOWS\SYSTEM\u2dmapi.dll
+Installing C:\WINDOWS\SYSTEM\u2dnotes.dll
+Installing C:\WINDOWS\SYSTEM\u2dpost.dll
+Installing C:\WINDOWS\SYSTEM\u2dvim.dll
+Installing C:\WINDOWS\SYSTEM\u2fcr.dll
+Installing C:\WINDOWS\SYSTEM\u2fhtml.dll
+Installing C:\WINDOWS\SYSTEM\u2fodbc.dll
+Installing C:\WINDOWS\SYSTEM\u2frec.dll
+Installing C:\WINDOWS\SYSTEM\u2frtf.dll
+Installing C:\WINDOWS\SYSTEM\u2fsepv.dll
+Installing C:\WINDOWS\SYSTEM\u2ftext.dll
+Installing C:\WINDOWS\SYSTEM\u2fwks.dll
+Installing C:\WINDOWS\SYSTEM\u2fwordw.dll
+Installing C:\WINDOWS\SYSTEM\u2fxls.dll
+Installing C:\WINDOWS\SYSTEM\u2l2000.dll
+Installing C:\WINDOWS\SYSTEM\u2lcom.dll
+Installing C:\WINDOWS\SYSTEM\u2ldts.dll
+Installing C:\WINDOWS\SYSTEM\u2lsamp1.dll
+Installing C:\WINDOWS\SYSTEM\Vb6stkit.dll
+
+[Installing External]
+
+[Register Fonts]
+
+[File Registration]
+
+[Uninstall]
+C:\WINDOWS\iun503.exe C:\Program Files\FSIB Financials\irunin.ini
+
+[Registry Commands]
+
+[Text File Commands]
+
+[INI File Commands]
+
+[Shortcut Commands]
+
+[Program Icons]
+C:\WINDOWS\Start Menu\Programs\FSIB Financials\FSIB Financials 1.0.lnk
+C:\WINDOWS\Start Menu\Programs\FSIB Financials\Mdac_typ.exe.lnk
+C:\WINDOWS\Start Menu\Programs\FSIB Financials\Setup.exe.lnk
+C:\WINDOWS\Start Menu\Programs\FSIB Financials\Setup1.exe.lnk
+C:\WINDOWS\Start Menu\Programs\FSIB Financials\St6unst.exe.lnk
+
+[Execute Commands 2]
+
+[File Operations 2]
+
+[Execute Commands 3]
+0, C:\Program Files\FSIB Financials\mdac_Typ.exe /q C:\Program Files\FSIB Financials
+
+[File Operations 3]
+
+Setup completed normally.
+
+

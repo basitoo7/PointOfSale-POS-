@@ -1,0 +1,1320 @@
+VERSION 5.00
+Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.0#0"; "Mscomctl.ocx"
+Object = "{5E9E78A0-531B-11CF-91F6-C2863C385E30}#1.0#0"; "Msflxgrd.ocx"
+Object = "{86CF1D34-0C5F-11D2-A9FC-0000F8754DA1}#2.0#0"; "MSCOMCT2.OCX"
+Begin VB.Form frmIssue 
+   Caption         =   "Goods Issued"
+   ClientHeight    =   5310
+   ClientLeft      =   60
+   ClientTop       =   345
+   ClientWidth     =   6285
+   BeginProperty Font 
+      Name            =   "Arial"
+      Size            =   8.25
+      Charset         =   0
+      Weight          =   400
+      Underline       =   0   'False
+      Italic          =   0   'False
+      Strikethrough   =   0   'False
+   EndProperty
+   Icon            =   "frmissue.frx":0000
+   LinkTopic       =   "Form1"
+   MaxButton       =   0   'False
+   MinButton       =   0   'False
+   ScaleHeight     =   5310
+   ScaleWidth      =   6285
+   StartUpPosition =   1  'CenterOwner
+   Begin VB.Frame Frame1 
+      BeginProperty Font 
+         Name            =   "MS Sans Serif"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   2295
+      Left            =   0
+      TabIndex        =   1
+      Top             =   570
+      Width           =   6255
+      Begin MSComCtl2.DTPicker txtvaluedate 
+         Height          =   315
+         Left            =   4950
+         TabIndex        =   39
+         Top             =   180
+         Width           =   1185
+         _ExtentX        =   2090
+         _ExtentY        =   556
+         _Version        =   393216
+         Format          =   24576001
+         CurrentDate     =   37309
+      End
+      Begin VB.TextBox txtJobDesc 
+         Appearance      =   0  'Flat
+         BackColor       =   &H80000004&
+         Enabled         =   0   'False
+         Height          =   315
+         Left            =   4440
+         MaxLength       =   64
+         TabIndex        =   38
+         TabStop         =   0   'False
+         Top             =   900
+         Width           =   1695
+      End
+      Begin VB.TextBox txtJobCode 
+         BackColor       =   &H00FFFFFF&
+         BeginProperty DataFormat 
+            Type            =   1
+            Format          =   "XXX"
+            HaveTrueFalseNull=   0
+            FirstDayOfWeek  =   0
+            FirstWeekOfYear =   0
+            LCID            =   1033
+            SubFormatType   =   0
+         EndProperty
+         Height          =   315
+         Left            =   2940
+         MaxLength       =   10
+         TabIndex        =   37
+         TabStop         =   0   'False
+         Top             =   900
+         Width           =   1155
+      End
+      Begin VB.CommandButton Command5 
+         Height          =   315
+         Left            =   4080
+         Picture         =   "frmissue.frx":030A
+         Style           =   1  'Graphical
+         TabIndex        =   36
+         TabStop         =   0   'False
+         Top             =   900
+         Width           =   315
+      End
+      Begin VB.TextBox txtIssueID 
+         BackColor       =   &H00FFFFFF&
+         BeginProperty DataFormat 
+            Type            =   1
+            Format          =   "XXX"
+            HaveTrueFalseNull=   0
+            FirstDayOfWeek  =   0
+            FirstWeekOfYear =   0
+            LCID            =   1033
+            SubFormatType   =   0
+         EndProperty
+         Height          =   315
+         Left            =   1440
+         MaxLength       =   6
+         TabIndex        =   35
+         TabStop         =   0   'False
+         Top             =   900
+         Width           =   1095
+      End
+      Begin VB.CommandButton Command4 
+         Height          =   315
+         Left            =   2520
+         Picture         =   "frmissue.frx":047C
+         Style           =   1  'Graphical
+         TabIndex        =   34
+         TabStop         =   0   'False
+         Top             =   900
+         Width           =   315
+      End
+      Begin VB.TextBox Text1 
+         Enabled         =   0   'False
+         Height          =   315
+         Left            =   3060
+         MaxLength       =   50
+         TabIndex        =   31
+         Text            =   "Text1"
+         Top             =   180
+         Visible         =   0   'False
+         Width           =   195
+      End
+      Begin VB.TextBox TxtRemarks 
+         Height          =   495
+         Left            =   1440
+         MaxLength       =   100
+         MultiLine       =   -1  'True
+         TabIndex        =   11
+         TabStop         =   0   'False
+         Top             =   1620
+         Width           =   4695
+      End
+      Begin VB.CommandButton Command3 
+         Height          =   315
+         Left            =   2520
+         Picture         =   "frmissue.frx":05EE
+         Style           =   1  'Graphical
+         TabIndex        =   9
+         TabStop         =   0   'False
+         Top             =   1260
+         Width           =   315
+      End
+      Begin VB.TextBox TxtPartyCode 
+         BackColor       =   &H00FFFFFF&
+         BeginProperty DataFormat 
+            Type            =   1
+            Format          =   "XXX"
+            HaveTrueFalseNull=   0
+            FirstDayOfWeek  =   0
+            FirstWeekOfYear =   0
+            LCID            =   1033
+            SubFormatType   =   0
+         EndProperty
+         Height          =   315
+         Left            =   1440
+         MaxLength       =   6
+         TabIndex        =   8
+         TabStop         =   0   'False
+         Top             =   1260
+         Width           =   1095
+      End
+      Begin VB.TextBox TxtPartyDesc 
+         Appearance      =   0  'Flat
+         BackColor       =   &H80000004&
+         Enabled         =   0   'False
+         Height          =   315
+         Left            =   2940
+         MaxLength       =   64
+         TabIndex        =   10
+         TabStop         =   0   'False
+         Top             =   1260
+         Width           =   3195
+      End
+      Begin VB.CommandButton Command2 
+         Height          =   315
+         Left            =   2520
+         Picture         =   "frmissue.frx":0760
+         Style           =   1  'Graphical
+         TabIndex        =   6
+         TabStop         =   0   'False
+         Top             =   540
+         Width           =   315
+      End
+      Begin VB.TextBox txtLocCode 
+         BackColor       =   &H00FFFFFF&
+         BeginProperty DataFormat 
+            Type            =   1
+            Format          =   "XXX"
+            HaveTrueFalseNull=   0
+            FirstDayOfWeek  =   0
+            FirstWeekOfYear =   0
+            LCID            =   1033
+            SubFormatType   =   0
+         EndProperty
+         Height          =   315
+         Left            =   1440
+         MaxLength       =   6
+         TabIndex        =   5
+         TabStop         =   0   'False
+         Top             =   540
+         Width           =   1095
+      End
+      Begin VB.TextBox txtLocDesc 
+         Appearance      =   0  'Flat
+         BackColor       =   &H80000004&
+         Enabled         =   0   'False
+         Height          =   315
+         Left            =   2940
+         MaxLength       =   64
+         TabIndex        =   7
+         TabStop         =   0   'False
+         Top             =   540
+         Width           =   3195
+      End
+      Begin VB.CommandButton cmdLookup 
+         Height          =   315
+         Left            =   2520
+         Picture         =   "frmissue.frx":08D2
+         Style           =   1  'Graphical
+         TabIndex        =   4
+         TabStop         =   0   'False
+         Top             =   180
+         Width           =   315
+      End
+      Begin VB.TextBox txtTransNo 
+         BackColor       =   &H00FFFF00&
+         BeginProperty DataFormat 
+            Type            =   0
+            Format          =   "XXX"
+            HaveTrueFalseNull=   0
+            FirstDayOfWeek  =   0
+            FirstWeekOfYear =   0
+            LCID            =   1033
+            SubFormatType   =   0
+         EndProperty
+         Height          =   315
+         Left            =   1440
+         MaxLength       =   10
+         TabIndex        =   3
+         TabStop         =   0   'False
+         Top             =   180
+         Width           =   1095
+      End
+      Begin VB.Label Label12 
+         Alignment       =   1  'Right Justify
+         Caption         =   "Issue Type :"
+         Height          =   255
+         Left            =   60
+         TabIndex        =   33
+         Top             =   900
+         Width           =   1305
+      End
+      Begin VB.Label Label7 
+         Alignment       =   1  'Right Justify
+         Caption         =   "Remarks :"
+         Height          =   255
+         Left            =   240
+         TabIndex        =   28
+         Top             =   1620
+         Width           =   1125
+      End
+      Begin VB.Label Label4 
+         Alignment       =   1  'Right Justify
+         Caption         =   "Whom issued :"
+         Height          =   255
+         Left            =   240
+         TabIndex        =   26
+         Top             =   1260
+         Width           =   1125
+      End
+      Begin VB.Label Label3 
+         Alignment       =   1  'Right Justify
+         Caption         =   "Issued From :"
+         Height          =   255
+         Left            =   60
+         TabIndex        =   25
+         Top             =   540
+         Width           =   1305
+      End
+      Begin VB.Label Label1 
+         Alignment       =   1  'Right Justify
+         Caption         =   "Reference #  :"
+         Height          =   255
+         Left            =   90
+         TabIndex        =   24
+         Top             =   180
+         Width           =   1275
+      End
+      Begin VB.Label label2 
+         Caption         =   "Value Date :"
+         Height          =   255
+         Left            =   4020
+         TabIndex        =   23
+         ToolTipText     =   "Enter Value Date"
+         Top             =   180
+         Width           =   885
+      End
+   End
+   Begin VB.Frame Frame2 
+      Height          =   2475
+      Left            =   0
+      TabIndex        =   2
+      Top             =   2820
+      Width           =   6255
+      Begin VB.TextBox txtItemDesc 
+         Alignment       =   1  'Right Justify
+         Appearance      =   0  'Flat
+         BackColor       =   &H80000004&
+         Enabled         =   0   'False
+         ForeColor       =   &H00800000&
+         Height          =   315
+         Left            =   120
+         MaxLength       =   64
+         TabIndex        =   32
+         TabStop         =   0   'False
+         Top             =   2100
+         Width           =   2835
+      End
+      Begin VB.TextBox TxtGrnTotal 
+         Alignment       =   1  'Right Justify
+         BackColor       =   &H00FFFFFF&
+         BeginProperty DataFormat 
+            Type            =   1
+            Format          =   """$""#,##0.00;(""$""#,##0.00)"
+            HaveTrueFalseNull=   0
+            FirstDayOfWeek  =   0
+            FirstWeekOfYear =   0
+            LCID            =   1033
+            SubFormatType   =   2
+         EndProperty
+         Enabled         =   0   'False
+         BeginProperty Font 
+            Name            =   "Arial"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   315
+         Left            =   4080
+         MaxLength       =   11
+         TabIndex        =   18
+         TabStop         =   0   'False
+         ToolTipText     =   "Total Issue Value"
+         Top             =   2100
+         Width           =   1275
+      End
+      Begin VB.TextBox TxtUM 
+         Alignment       =   1  'Right Justify
+         Appearance      =   0  'Flat
+         BackColor       =   &H00C0C0C0&
+         BeginProperty DataFormat 
+            Type            =   1
+            Format          =   """$""#,##0;(""$""#,##0)"
+            HaveTrueFalseNull=   0
+            FirstDayOfWeek  =   0
+            FirstWeekOfYear =   0
+            LCID            =   1033
+            SubFormatType   =   2
+         EndProperty
+         Enabled         =   0   'False
+         ForeColor       =   &H00800000&
+         Height          =   315
+         Left            =   3240
+         MaxLength       =   11
+         TabIndex        =   15
+         TabStop         =   0   'False
+         ToolTipText     =   "U/M"
+         Top             =   420
+         Width           =   735
+      End
+      Begin VB.TextBox TxtFactor 
+         Alignment       =   1  'Right Justify
+         Appearance      =   0  'Flat
+         BackColor       =   &H00C0C0C0&
+         BeginProperty DataFormat 
+            Type            =   1
+            Format          =   """$""#,##0;(""$""#,##0)"
+            HaveTrueFalseNull=   0
+            FirstDayOfWeek  =   0
+            FirstWeekOfYear =   0
+            LCID            =   1033
+            SubFormatType   =   2
+         EndProperty
+         Enabled         =   0   'False
+         ForeColor       =   &H00800000&
+         Height          =   315
+         Left            =   2820
+         MaxLength       =   11
+         TabIndex        =   14
+         TabStop         =   0   'False
+         ToolTipText     =   "Factor"
+         Top             =   420
+         Width           =   435
+      End
+      Begin VB.CommandButton Command1 
+         Height          =   315
+         Left            =   2400
+         Picture         =   "frmissue.frx":0A44
+         Style           =   1  'Graphical
+         TabIndex        =   13
+         TabStop         =   0   'False
+         Top             =   420
+         Width           =   315
+      End
+      Begin VB.TextBox TxtItemCode 
+         BackColor       =   &H00FFFFFF&
+         BeginProperty DataFormat 
+            Type            =   0
+            Format          =   "XXX"
+            HaveTrueFalseNull=   0
+            FirstDayOfWeek  =   0
+            FirstWeekOfYear =   0
+            LCID            =   1033
+            SubFormatType   =   0
+         EndProperty
+         Height          =   315
+         Left            =   120
+         MaxLength       =   50
+         TabIndex        =   12
+         TabStop         =   0   'False
+         ToolTipText     =   "Item Code"
+         Top             =   420
+         Width           =   2295
+      End
+      Begin VB.TextBox txtqty 
+         Alignment       =   1  'Right Justify
+         BackColor       =   &H00FFFFFF&
+         BeginProperty DataFormat 
+            Type            =   1
+            Format          =   "#,##0;(#,##0)"
+            HaveTrueFalseNull=   0
+            FirstDayOfWeek  =   0
+            FirstWeekOfYear =   0
+            LCID            =   1033
+            SubFormatType   =   1
+         EndProperty
+         Height          =   315
+         Left            =   4020
+         MaxLength       =   11
+         TabIndex        =   16
+         TabStop         =   0   'False
+         ToolTipText     =   "Issue Quantity"
+         Top             =   420
+         Width           =   1095
+      End
+      Begin VB.TextBox txtUnitPrice 
+         Alignment       =   1  'Right Justify
+         Appearance      =   0  'Flat
+         BackColor       =   &H00C0C0C0&
+         BeginProperty DataFormat 
+            Type            =   1
+            Format          =   """$""#,##0.000;(""$""#,##0.000)"
+            HaveTrueFalseNull=   0
+            FirstDayOfWeek  =   0
+            FirstWeekOfYear =   0
+            LCID            =   1033
+            SubFormatType   =   2
+         EndProperty
+         Enabled         =   0   'False
+         Height          =   315
+         Left            =   5160
+         MaxLength       =   11
+         TabIndex        =   17
+         TabStop         =   0   'False
+         ToolTipText     =   "Unit Price"
+         Top             =   420
+         Width           =   975
+      End
+      Begin MSFlexGridLib.MSFlexGrid GrdGRN 
+         Height          =   1335
+         Left            =   120
+         TabIndex        =   19
+         Top             =   780
+         Width           =   6015
+         _ExtentX        =   10610
+         _ExtentY        =   2355
+         _Version        =   393216
+         Rows            =   1
+      End
+      Begin VB.Label Label11 
+         Caption         =   "Issue Total :"
+         ForeColor       =   &H00000080&
+         Height          =   255
+         Left            =   3120
+         TabIndex        =   30
+         Top             =   2160
+         Width           =   885
+      End
+      Begin VB.Label Label10 
+         Caption         =   "U / M :"
+         ForeColor       =   &H00000080&
+         Height          =   255
+         Left            =   3540
+         TabIndex        =   29
+         Top             =   180
+         Width           =   465
+      End
+      Begin VB.Label Label5 
+         Caption         =   "Factor :"
+         ForeColor       =   &H00000080&
+         Height          =   255
+         Left            =   2820
+         TabIndex        =   27
+         Top             =   180
+         Width           =   585
+      End
+      Begin VB.Label Label6 
+         Alignment       =   2  'Center
+         Caption         =   "Item Code :"
+         ForeColor       =   &H00000080&
+         Height          =   255
+         Left            =   180
+         TabIndex        =   22
+         Top             =   180
+         Width           =   2205
+      End
+      Begin VB.Label Label8 
+         Alignment       =   2  'Center
+         Caption         =   "Quantity :"
+         ForeColor       =   &H00000080&
+         Height          =   255
+         Left            =   4020
+         TabIndex        =   21
+         Top             =   180
+         Width           =   1065
+      End
+      Begin VB.Label Label9 
+         Caption         =   "Unit Price :"
+         ForeColor       =   &H00000080&
+         Height          =   255
+         Left            =   5280
+         TabIndex        =   20
+         Top             =   180
+         Width           =   825
+      End
+   End
+   Begin MSComctlLib.Toolbar Toolbar1 
+      Align           =   1  'Align Top
+      Height          =   570
+      Left            =   0
+      TabIndex        =   0
+      Top             =   0
+      Width           =   6285
+      _ExtentX        =   11086
+      _ExtentY        =   1005
+      ButtonWidth     =   1217
+      ButtonHeight    =   953
+      Appearance      =   1
+      Style           =   1
+      ImageList       =   "ImageList1"
+      _Version        =   393216
+      BeginProperty Buttons {66833FE8-8583-11D1-B16A-00C0F0283628} 
+         NumButtons      =   7
+         BeginProperty Button1 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Caption         =   "&New"
+            Description     =   "Add"
+            Object.ToolTipText     =   "Add new record"
+            ImageIndex      =   1
+         EndProperty
+         BeginProperty Button2 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Caption         =   "&Edit"
+            Description     =   "Edit"
+            Object.ToolTipText     =   "Edit an existing record"
+            ImageIndex      =   2
+         EndProperty
+         BeginProperty Button3 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Caption         =   "&Delete"
+            Description     =   "Remove "
+            Object.ToolTipText     =   "Remove an existing record."
+            ImageIndex      =   3
+         EndProperty
+         BeginProperty Button4 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Caption         =   "&Save"
+            Description     =   "Save a new Record"
+            Object.ToolTipText     =   "Save on disk"
+            ImageIndex      =   4
+         EndProperty
+         BeginProperty Button5 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Caption         =   "&Slip"
+            Description     =   "Print Listing."
+            Object.ToolTipText     =   "Print listing."
+            ImageIndex      =   5
+         EndProperty
+         BeginProperty Button6 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Caption         =   "&Find"
+            Description     =   "Find a Record."
+            Object.ToolTipText     =   "Find a record."
+            ImageIndex      =   6
+         EndProperty
+         BeginProperty Button7 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Caption         =   "&Cancel"
+            Description     =   "Cancel Operation"
+            Object.ToolTipText     =   "Cancel operation mode"
+            ImageIndex      =   7
+         EndProperty
+      EndProperty
+      BorderStyle     =   1
+      MousePointer    =   14
+      Begin MSComctlLib.ImageList ImageList1 
+         Left            =   4920
+         Top             =   0
+         _ExtentX        =   1005
+         _ExtentY        =   1005
+         BackColor       =   -2147483643
+         ImageWidth      =   16
+         ImageHeight     =   16
+         MaskColor       =   12632256
+         _Version        =   393216
+         BeginProperty Images {2C247F25-8591-11D1-B16A-00C0F0283628} 
+            NumListImages   =   7
+            BeginProperty ListImage1 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+               Picture         =   "frmissue.frx":0BB6
+               Key             =   ""
+            EndProperty
+            BeginProperty ListImage2 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+               Picture         =   "frmissue.frx":100A
+               Key             =   ""
+            EndProperty
+            BeginProperty ListImage3 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+               Picture         =   "frmissue.frx":145E
+               Key             =   ""
+            EndProperty
+            BeginProperty ListImage4 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+               Picture         =   "frmissue.frx":18B2
+               Key             =   ""
+            EndProperty
+            BeginProperty ListImage5 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+               Picture         =   "frmissue.frx":1D06
+               Key             =   ""
+            EndProperty
+            BeginProperty ListImage6 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+               Picture         =   "frmissue.frx":215A
+               Key             =   ""
+            EndProperty
+            BeginProperty ListImage7 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+               Picture         =   "frmissue.frx":28AE
+               Key             =   ""
+            EndProperty
+         EndProperty
+      End
+   End
+End
+Attribute VB_Name = "frmIssue"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = False
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Dim PB_BlnkGRN As Boolean
+Dim Mode As String
+Public PO_CODE As Object
+Public PO_DESC As Object
+
+Dim PI_CurRow    As Integer
+Dim PI_SrNo      As Integer
+Dim PS_RowClicked As String
+
+Dim cntsql As New ADODB.Command
+Dim ls_TransType As String
+
+Dim PR_ICItmLoc As New Recordset
+Dim PR_ICParty As New Recordset
+Dim PR_ICISSU As New Recordset
+Dim PR_IcItem As New Recordset
+Dim PR_IssueType As New Recordset
+Dim PR_JobCode As New Recordset
+
+Private Sub cboIssueType_Click()
+    cboIssueID.ListIndex = cboIssueType.ListIndex
+End Sub
+
+Private Sub cboIssueType_KeyDown(KeyCode As Integer, Shift As Integer)
+    If KeyCode = vbKeyReturn Then TxtPartyCode.SetFocus
+End Sub
+
+Private Sub cmdLookup_Click()
+    Set PO_AnyForm = Nothing
+    Set PO_AnyForm = Me
+    Set PO_CODE = txtTransNo
+    Set PO_DESC = Text1
+    GoTop PR_ICISSU
+    MyLookup.Caption = "Issue References "
+    MyLookup.FillGrid PR_ICISSU, "Transc_No", "Value_Date", 10
+    MyLookup.Show 1
+    
+    If Len(txtTransNo) > 0 Then txtTransNo_KeyDown vbKeyReturn, vbKeyShift
+End Sub
+
+Private Sub Command2_Click()
+    Set PO_AnyForm = Nothing
+    Set PO_AnyForm = Me
+    Set PO_CODE = txtLocCode
+    Set PO_DESC = txtLocDesc
+    GoTop PR_ICItmLoc
+    MyLookup.Caption = "Items. "
+    MyLookup.FillGrid PR_ICItmLoc, "LocationCode", "Description", 6
+    MyLookup.Show 1
+    
+    If Len(txtLocCode) > 0 Then txtLocCode_KeyDown vbKeyReturn, vbKeyShift
+End Sub
+
+Private Sub Command3_Click()
+    If PR_ICParty.State = 1 Then PR_ICParty.Close
+    PR_ICParty.Open "Select * from Ic_Supplier WHERE CodeID = '" & txtIssueID.Tag & "'", gc_dbcon, adOpenStatic, adLockReadOnly, 1
+    
+    Set PO_AnyForm = Nothing
+    Set PO_AnyForm = Me
+    Set PO_CODE = TxtPartyCode
+    Set PO_DESC = TxtPartyDesc
+    GoTop PR_ICParty
+    MyLookup.Caption = "Supplier Parties. "
+    MyLookup.FillGrid PR_ICParty, "supplierCode", "Description", 6
+    MyLookup.Show 1
+    
+    If Len(TxtPartyCode) > 0 Then txtPartyCode_KeyDown vbKeyReturn, vbKeyShift
+End Sub
+
+Private Sub Command1_Click()
+    Set PO_AnyForm = Nothing
+    Set PO_AnyForm = Me
+    Set PO_CODE = txtItemCode
+    Set PO_DESC = txtItemDesc
+    
+    PR_IcItem.Filter = "LocationCode = '" & txtLocCode.Text & " '"
+    If PR_IcItem.EOF Then
+       Call SetErr("No Item has been found.", vbCritical)
+       Exit Sub
+    End If
+    GoTop PR_IcItem
+    MyLookup.Caption = "Items. "
+    MyLookup.FillGrid PR_IcItem, "ItemId", "Description", 15
+    MyLookup.Show 1
+    
+    PR_IcItem.Filter = adFilterNone
+    If Len(txtItemCode) > 0 Then txtItemCode_KeyDown vbKeyReturn, vbKeyShift
+End Sub
+
+Private Sub Command4_Click()
+    Set PO_AnyForm = Nothing
+    Set PO_AnyForm = Me
+    Set PO_CODE = txtIssueID
+    Set PO_DESC = Text1
+    GoTop PR_IssueType
+    MyLookup.Caption = "Items. "
+    MyLookup.FillGrid PR_IssueType, "IssueID", "Description", 6
+    MyLookup.Show 1
+    txtIssueID.Tag = PO_CODE.Text
+    If Len(txtIssueID) > 0 Then txtIssueID_KeyDown vbKeyReturn, vbKeyShift
+End Sub
+
+Private Sub Command5_Click()
+    Set PO_AnyForm = Nothing
+    Set PO_AnyForm = Me
+    Set PO_CODE = txtJobCode
+    Set PO_DESC = txtJobDesc
+    GoTop PR_JobCode
+    MyLookup.Caption = "Jobs "
+    MyLookup.FillGrid PR_JobCode, "JobCode", "Description", 6
+    MyLookup.Show 1
+    
+    If Len(txtJobCode) > 0 Then txtJobCode_KeyDown vbKeyReturn, vbKeyShift
+End Sub
+
+Private Sub Form_Load()
+ cntsql.ActiveConnection = gc_dbcon
+ cntsql.CommandType = adCmdText
+ ls_TransType = "I"
+ 
+  SetToolBar(1) = chkRights("ICISUSTP01")
+  SetToolBar(2) = False
+  SetToolBar(3) = False
+  SetToolBar(4) = chkRights("ICISUSTP04")
+  
+  Toolbar1.Buttons(1).Enabled = SetToolBar(1)
+  Toolbar1.Buttons(2).Enabled = SetToolBar(2)
+  Toolbar1.Buttons(3).Enabled = SetToolBar(3)
+  Toolbar1.Buttons(5).Enabled = SetToolBar(4)
+  
+  PR_ICItmLoc.Open "Select * from Ic_Locations where compcode ='" & Gs_compcode & "'", gc_dbcon, adOpenStatic, adLockReadOnly, 1
+  PR_ICParty.Open "Select * from Ic_Supplier", gc_dbcon, adOpenStatic, adLockReadOnly, 1
+  PR_IcItem.Open "Select *,(ltrim(rtrim(itemclass))+ltrim(rtrim(itemcode))) as ItemID,(ltrim(rtrim(locationcode))+ltrim(rtrim(itemclass))+ltrim(rtrim(itemcode))) as ItemFind from Ic_Item where compcode ='" & Gs_compcode & "'", gc_dbcon, adOpenDynamic, adLockOptimistic, 1
+  PR_ICISSU.Open "Select *,(Compcode+TransType+Transc_No) As ISSFind from Ic_Trans where compcode ='" & Gs_compcode & "' and TransType = 'I' AND (Value_Date >= '" & Format(Gs_Fnperiod, "YYYY/MM/DD") & "' AND Value_Date <= '" & Format(Gs_FnEndPeriod, "YYYY/MM/DD") & "') order by ISSFind", gc_dbcon, adOpenDynamic, adLockOptimistic
+  PR_IssueType.Open "Select * from IC_IssueType", gc_dbcon, adOpenForwardOnly, adLockReadOnly
+  PR_JobCode.Open "Select * from IC_Job Where CompCode = '" & Gs_compcode & "'", gc_dbcon, adOpenForwardOnly, adLockReadOnly
+  
+  PB_BlnkGRN = IIf(PR_ICISSU.EOF, True, False)
+  txtValueDate.Value = Date
+  InitializeGrid
+End Sub
+
+Private Sub Form_Unload(Cancel As Integer)
+    PR_ICItmLoc.Close
+    If PR_ICParty.State = 1 Then PR_ICParty.Close
+    PR_ICISSU.Close
+    PR_IcItem.Close
+    PR_IssueType.Close
+    PR_JobCode.Close
+End Sub
+
+Private Sub Text1_GotFocus()
+    txtValueDate.SetFocus
+End Sub
+
+Private Sub txtIssueID_KeyDown(KeyCode As Integer, Shift As Integer)
+Dim lb_found As Boolean
+ 
+ If LastKey(KeyCode) And Len(txtIssueID.Text) > 0 Then
+         txtIssueID = IIf(IsNumeric(LTrim(RTrim(txtIssueID.Text))), DoPad(txtIssueID.Text, 6), UCase(txtIssueID.Text))
+         lb_found = MySeek(txtIssueID.Tag, "IssueID", PR_IssueType)
+         If Not lb_found Then
+             Call SetErr(Gs_RecNFMsg, vbCritical)
+             txtIssueID.SetFocus
+         Else
+             txtIssueID.Tag = txtIssueID
+             txtIssueID.Text = PR_IssueType("Description")
+             txtJobCode.SetFocus
+         End If
+ End If
+End Sub
+
+Private Sub txtJobCode_KeyDown(KeyCode As Integer, Shift As Integer)
+Dim lb_found As Boolean
+ 
+ If LastKey(KeyCode) Then
+    If Len(txtJobCode.Text) > 0 Then
+         txtJobCode.Text = IIf(IsNumeric(LTrim(RTrim(txtJobCode.Text))), DoPad(txtJobCode.Text, 10), UCase(txtJobCode.Text))
+         lb_found = MySeek(txtJobCode.Text, "JobCode", PR_JobCode)
+         If Not lb_found Then
+             Call SetErr(Gs_RecNFMsg, vbCritical)
+             txtJobCode.SetFocus
+             txtJobDesc.Text = ""
+         Else
+             txtJobDesc.Text = PR_JobCode("Description")
+             TxtPartyCode.SetFocus
+         End If
+    Else
+         TxtPartyCode.SetFocus
+    End If
+ End If
+
+End Sub
+
+Private Sub txtqty_KeyDown(KeyCode As Integer, Shift As Integer)
+    If KeyCode = vbKeyReturn Then
+       If Not Range(Val(txtqty.Text), 1, Val(0 & PR_IcItem.Fields("ItemBalQty"))) Then
+          Call SetErr("Invalid Quantity Value.", vbCritical)
+          txtqty.SetFocus
+       Else
+          txtqty.Text = Round(txtqty.Text * TxtFactor, 0)
+          Call txtUnitPrice_KeyDown(vbKeyReturn, vbKeyShift)
+          txtItemCode.SetFocus
+       End If
+    End If
+End Sub
+
+Private Sub txtqty_LostFocus()
+'     Call txtqty_KeyDown(vbKeyReturn, vbKeyShift)
+End Sub
+
+Private Sub txtRemarks_KeyDown(KeyCode As Integer, Shift As Integer)
+   If LastKey(KeyCode) Then
+      txtItemCode.SetFocus
+   End If
+End Sub
+
+Private Sub txtTransNo_KeyDown(KeyCode As Integer, Shift As Integer)
+Dim lb_found As Boolean
+
+ If LastKey(KeyCode) And Len(txtTransNo.Text) > 0 Then
+         
+         txtTransNo.Text = IIf(IsNumeric(LTrim(Str(txtTransNo.Text))), DoPad(UCase(txtTransNo.Text), 10), UCase(txtTransNo.Text))
+         lb_found = MySeek(Gs_compcode & ls_TransType & txtTransNo.Text, "ISSFind", PR_ICISSU)
+         If Gl_Demo Then
+            If PR_ICISSU.RecordCount > gn_MaxVchrs Then
+                Call SetErr("This is Demo software you cannot add more than " & LTrim(Str(gn_MaxVchrs)) & " Transactions.", vbCritical)
+                Unload Me
+                Exit Sub
+            End If
+         End If
+         
+         InitializeGrid
+         
+       Select Case Mode
+            Case "A"
+                If lb_found Then
+                   Call SetErr(Gs_RecFdMsg, vbCritical)
+                   Cancel = True
+                   Call ClearVal
+                   txtTransNo.SetFocus
+                Else
+                   txtLocCode.SetFocus
+                End If
+            Case Else
+                If Not lb_found Then
+                   Call SetErr(Gs_RecNFMsg, vbCritical)
+                   Cancel = True
+                   Call ClearVal
+                   txtLocCode.SetFocus
+                Else
+                   Call SetVal
+                   LoadGRNTrans
+                   If Mode <> "D" Then
+                      txtTransNo.SetFocus
+                   End If
+                End If
+            End Select
+            
+       End If
+  End Sub
+Private Sub Toolbar1_ButtonClick(ByVal Button As MSComctlLib.Button)
+    If Button.Index = 1 Then
+       cmdLookup.Enabled = False
+    Else
+       cmdLookup.Enabled = True
+    End If
+    
+    If PB_BlnkGRN And Range(Button.Index, 2, 3) Then
+       MsgBox "Data not found :", vbCritical
+       Mode = ""
+       Cancel = True
+    Else
+       Mode = DentMode(Mode, Button.Index, PR_ICISSU, Me, txtTransNo, txtValueDate, Para_Rs, "IC_ISSuCnt", 10, "txtTransNo", "text1", 0, False, Toolbar1)
+    End If
+    
+End Sub
+
+
+Public Sub SaveValues()
+Dim cntsql As New ADODB.Command
+Dim Ln_Cnt As Integer
+Dim ln_AvgPrice As Integer
+
+cntsql.ActiveConnection = gc_dbcon
+cntsql.CommandType = adCmdText
+
+If Mode = "A" Then FrmRelISU.Show 1
+
+gc_dbcon.BeginTrans
+
+     Select Case Mode
+           Case "D"
+              cntsql.CommandText = "DELETE FROM IC_Trans WHERE CompCode = '" & Gs_compcode & "' AND Transc_No = '" & Trim(txtTransNo) & "' AND TransType = '" & ls_TransType & "' AND Value_Date = '" & Format(txtValueDate, "YYYY/MM/DD") & "' AND LocationCode1 = '" & Trim(txtLocCode) & "'"
+              cntsql.Execute
+           Case Else
+                If Mode = "E" Then
+                    cntsql.CommandText = "DELETE FROM IC_Trans WHERE CompCode = '" & Gs_compcode & "' AND Transc_No = '" & Trim(txtTransNo) & "' AND TransType = '" & ls_TransType & "' AND Value_Date = '" & Format(txtValueDate, "YYYY/MM/DD") & "' AND RTrim(LTrim(LocationCode1)) = '" & Trim(txtLocCode) & "'"
+                    cntsql.Execute
+                End If
+              
+                With GrdGRN
+                    For Ln_Cnt = 1 To .Rows - 1
+                       If MySeek(txtLocCode.Text & .TextMatrix(Ln_Cnt, 1), "ItemFind", PR_IcItem) Then
+                          PR_IcItem.Fields("ItemBalQty") = PR_IcItem.Fields("ItemBalQty") - Val(.TextMatrix(Ln_Cnt, 2))
+                          PR_IcItem.Update
+                       End If
+                       cntsql.CommandText = "INSERT into IC_Trans(compcode,Transc_No, TransType, Value_Date, LocationCode1, SerialNo, SupplierCode, ItemClass, ItemCode,Quantity,UnitCost,Remarks,IssueType,JobCode) VALUES ('" & Gs_compcode & "','" & Trim(txtTransNo) & "','" & ls_TransType & "','" & Format(txtValueDate, "YYYY/MM/DD") & "','" & Trim(txtLocCode) & "'," & .TextMatrix(Ln_Cnt, 0) & ",'" & Trim(TxtPartyCode) & "','" & .TextMatrix(Ln_Cnt, 6) & "','" & .TextMatrix(Ln_Cnt, 7) & "'," & Val(.TextMatrix(Ln_Cnt, 2)) * -1 & "," & Val(.TextMatrix(Ln_Cnt, 3)) & ",'" & Trim(txtRemarks) & "','" & txtIssueID.Tag & "','" & txtJobCode & "')"
+                       cntsql.Execute
+                    Next
+                   If Mode = "A" Then
+                      txtTransNo.Text = DoPad(LTrim(Str(Para_Rs.Fields("IC_ISSUCnt"))) + 1, 10)
+                   End If
+                 End With
+                 
+     End Select
+gc_dbcon.CommitTrans
+
+PR_ICISSU.Requery
+On Error GoTo 0
+Exit Sub
+
+Rollback:
+Call SetErr("Processing Error, Operation Terminated. Call System Administrator,", vbCritical)
+gc_dbcon.RollbackTrans
+
+If Mode = "A" Then
+    Para_Rs.Fields("Ic_IssuCnt") = Para_Rs.Fields("Ic_IssuCnt") - 1
+    Para_Rs.Update
+End If
+On Error GoTo 0
+End Sub
+Public Sub ClearVal()
+     txtLocDesc = ""
+     TxtPartyDesc = ""
+     txtLocCode = ""
+     TxtPartyCode = ""
+     txtRemarks = ""
+     txtValueDate.Value = Date
+     TxtGrnTotal = ""
+     txtItemCode = ""
+     InitializeGrid
+     TxtFactor = ""
+     TxtUM = ""
+     txtIssueID = ""
+     txtIssueID.Tag = ""
+     txtqty = ""
+     txtUnitPrice = ""
+     txtJobCode = ""
+     PI_SrNo = 0
+     txtJobDesc = ""
+End Sub
+
+Private Sub SetVal()
+     txtIssueID.Tag = PR_ICISSU("IssueType")
+     txtIssueID = IIf(MySeek(PR_ICISSU("IssueType"), "IssueID", PR_IssueType), PR_IssueType.Fields("Description"), "Not Found.")
+     txtJobCode = PR_ICISSU("JobCode") & ""
+     txtJobDesc = IIf(MySeek(PR_ICISSU("JobCode"), "JobCode", PR_JobCode), PR_JobCode.Fields("Description"), "Not Found.")
+     txtValueDate = PR_ICISSU("Value_Date")
+     txtLocCode = PR_ICISSU("LocationCode1")
+     txtLocDesc = IIf(MySeek(PR_ICISSU("LocationCode1"), "LocationCode", PR_ICItmLoc), PR_ICItmLoc.Fields("Description"), "Not Found.")
+     TxtPartyCode = PR_ICISSU("SupplierCode")
+     TxtPartyDesc = IIf(MySeek(PR_ICISSU("SupplierCode"), "SupplierId", PR_ICParty), PR_ICParty.Fields("Description"), "Not Found.")
+     txtRemarks = PR_ICISSU("Remarks")
+End Sub
+Public Function ChkInputs() As Boolean
+    If Len(txtTransNo.Text) = txtTransNo.MaxLength And Len(txtLocCode) = txtLocCode.MaxLength And Len(TxtPartyCode) = TxtPartyCode.MaxLength And PI_SrNo > 0 Then
+       ChkInputs = True
+    Else
+       Call SetErr(Gs_InvldMsg, vbCritical)
+       ChkInputs = False
+    End If
+End Function
+
+Private Sub txtLocCode_KeyDown(KeyCode As Integer, Shift As Integer)
+Dim lb_found As Boolean
+ 
+ If LastKey(KeyCode) And Len(txtLocCode.Text) > 0 Then
+         txtLocCode.Text = IIf(IsNumeric(LTrim(RTrim(txtLocCode.Text))), DoPad(txtLocCode.Text, 6), UCase(txtLocCode.Text))
+         lb_found = MySeek(txtLocCode.Text, "LocationCode", PR_ICItmLoc)
+         If Not lb_found Then
+             Call SetErr(Gs_RecNFMsg, vbCritical)
+             txtLocCode.SetFocus
+             txtLocDesc.Text = ""
+         Else
+             txtLocDesc.Text = PR_ICItmLoc("Description")
+             txtIssueID.SetFocus
+         End If
+ End If
+End Sub
+
+Private Sub txtPartyCode_KeyDown(KeyCode As Integer, Shift As Integer)
+Dim lb_found As Boolean
+ 
+ If LastKey(KeyCode) And Len(TxtPartyCode.Text) > 0 Then
+         TxtPartyCode.Text = IIf(IsNumeric(LTrim(RTrim(TxtPartyCode.Text))), DoPad(TxtPartyCode.Text, 6), UCase(TxtPartyCode.Text))
+         lb_found = MySeek(TxtPartyCode.Text, "SupplierCode", PR_ICParty)
+         If Not lb_found Then
+             Call SetErr(Gs_RecNFMsg, vbCritical)
+             TxtPartyCode.SetFocus
+             TxtPartyDesc.Text = ""
+         Else
+             TxtPartyDesc.Text = PR_ICParty("Description")
+             txtRemarks.SetFocus
+         End If
+ End If
+End Sub
+Private Sub txtItemCode_KeyDown(KeyCode As Integer, Shift As Integer)
+Dim lb_found As Boolean
+Dim Ln_Cnt As Integer
+ 
+ If LastKey(KeyCode) And Len(txtItemCode.Text) > 0 Then
+         With GrdGRN
+               For Ln_Cnt = 1 To .Rows - 1
+                   If .TextMatrix(Ln_Cnt, 1) = txtItemCode Then
+                      Call SetErr("Item ID already exists.", vbCritical)
+                      txtItemCode.SetFocus
+                      Exit Sub
+                   End If
+                Next
+         End With
+         txtItemCode.Text = UCase(txtItemCode.Text)
+         lb_found = MySeek(txtLocCode.Text & txtItemCode.Text, "ItemFind", PR_IcItem)
+         
+         If Not lb_found Then
+             Call SetErr(Gs_RecNFMsg, vbCritical)
+             txtItemCode.SetFocus
+         Else
+             txtItemDesc = PR_IcItem.Fields("Description")
+             TxtFactor = PR_IcItem.Fields("ItemFactor")
+             TxtUM = PR_IcItem.Fields("ItemUM")
+             txtUnitPrice = IIf(gs_ICBase = "A", Val(PR_IcItem.Fields("ItemAvgPrice")), Val(PR_IcItem.Fields("ItemUnitPrice")))
+             txtqty.SetFocus
+         End If
+ End If
+End Sub
+
+Private Sub InitializeGrid()
+    With GrdGRN
+        .Redraw = False
+        .Clear
+        .Rows = 2
+        .FormatString = "Sr# |<Item Code|<Quantity|<Unit Price|<Amount  |<Location|<Item Class|<Item Code|<GlAccount"
+        .ColWidth(1) = 1700
+        .ColWidth(2) = 1000
+        .ColWidth(3) = 800
+        .ColAlignment(3) = 7
+        .ColWidth(4) = 1440
+        .ColAlignment(4) = 7
+        .ColWidth(5) = 0
+        .ColWidth(6) = 0
+        .ColWidth(7) = 0
+        .ColWidth(8) = 0
+        .Redraw = True
+    End With
+End Sub
+
+Private Sub grdGrn_KeyDown(KeyCode As Integer, Shift As Integer)
+    With GrdGRN
+        If KeyCode = vbKeyDelete Then
+            If .Row = 1 And Not .Rows > 2 Then .Rows = .Rows + 1
+            .RemoveItem .Row
+            TotalGRN
+            If .Rows = 2 And .TextMatrix(.Row, 1) = "" Then
+                .TextMatrix(.Row, 0) = ""
+                PI_SrNo = 0
+            End If
+        End If
+    End With
+End Sub
+
+Private Sub txtUnitPrice_KeyDown(KeyCode As Integer, Shift As Integer)
+Dim Ln_Cnt As Integer
+
+    If LastKey(KeyCode) Then
+      If (Val(txtqty) > 0 Or Val(txtUnitPrice) > 0) Then
+        
+        If PS_RowClicked = "" Then
+            If PI_SrNo = 0 Then
+                PI_SrNo = 1
+            Else
+                PI_SrNo = PI_SrNo + 1
+            End If
+        End If
+        
+        If Len(txtItemCode.Text) > 0 Then
+            With GrdGRN
+                If PS_RowClicked = "" Then
+                    If Not PI_SrNo = 1 Then .Rows = .Rows + 1
+                    .Row = .Rows - 1
+                Else
+                    .Row = PI_CurRow
+                End If
+                If PS_RowClicked = "" Then
+                    .TextMatrix(.Row, 0) = PI_SrNo
+                Else
+                    .TextMatrix(.Row, 0) = PI_CurRow
+                End If
+              If MySeek(txtLocCode.Text & txtItemCode.Text, "ItemFind", PR_IcItem) Then
+                .TextMatrix(.Row, 1) = Trim(txtItemCode)
+                .TextMatrix(.Row, 2) = Val(txtqty)
+                .TextMatrix(.Row, 3) = Val(txtUnitPrice)
+                .TextMatrix(.Row, 4) = Round(Val(txtqty) * Val(txtUnitPrice), 0)
+                
+                .TextMatrix(.Row, 5) = PR_IcItem("LocationCode")
+                .TextMatrix(.Row, 6) = PR_IcItem("ItemClass")
+                .TextMatrix(.Row, 7) = PR_IcItem("ItemCode")
+                .TextMatrix(.Row, 8) = PR_IcItem("gl_Accountno2")
+              Else
+                 Call SetErr("Item Code Not Found.", vbCritical)
+                 txtItemCode.SetFocus
+              End If
+                txtItemCode.Text = ""
+                TxtFactor.Text = ""
+                TxtUM.Text = ""
+                txtqty = ""
+                txtUnitPrice = ""
+                txtItemCode.SetFocus
+                PS_RowClicked = ""
+            End With
+        End If
+            TotalGRN
+    Else
+               txtItemCode.SetFocus
+    End If
+    End If
+End Sub
+Private Sub TotalGRN()
+    Dim Ln_Cnt As Integer
+    Dim Ln_Cnt2 As Integer
+    Dim lb_AppArray As Integer
+    Dim ln_ArRow As Integer
+    TxtGrnTotal = ""
+    ln_ArRow = 1
+    
+    With GrdGRN
+        ReDim gv_glArray(1 To (.Rows - 1), 2)
+        For Ln_Cnt = 1 To .Rows - 1
+            .TextMatrix(Ln_Cnt, 0) = Ln_Cnt
+            TxtGrnTotal = Val(TxtGrnTotal) + Val(.TextMatrix(Ln_Cnt, 4))
+            PI_SrNo = Ln_Cnt
+            
+            'Search AccontNos in Array
+            lb_AppArray = True
+            For Ln_Cnt2 = 1 To .Rows - 1
+                If .TextMatrix(Ln_Cnt, 8) = gv_glArray(Ln_Cnt2, 1) And .TextMatrix(Ln_Cnt2, 8) <> "" Then
+                    lb_AppArray = False
+                    Exit For
+                End If
+            Next
+            ' Save into gv_GlArray
+            If .TextMatrix(Ln_Cnt, 8) <> "" Then
+            If lb_AppArray Then
+               gv_glArray(ln_ArRow, 1) = .TextMatrix(Ln_Cnt, 8)
+               gv_glArray(ln_ArRow, 2) = .TextMatrix(Ln_Cnt, 4)
+               ln_ArRow = ln_ArRow + 1
+            Else
+               gv_glArray(Ln_Cnt2, 2) = gv_glArray(Ln_Cnt2, 2) + Val(.TextMatrix(Ln_Cnt, 4))
+            End If
+            End If
+        Next
+    End With
+End Sub
+
+'Private Sub TotalGRN()
+'    Dim Ln_Cnt As Integer
+'    TxtGrnTotal = ""
+'    With GrdGRN
+'        For Ln_Cnt = 1 To .Rows - 1
+'            .TextMatrix(Ln_Cnt, 0) = Ln_Cnt
+'            TxtGrnTotal = Val(TxtGrnTotal) + Val(.TextMatrix(Ln_Cnt, 4))
+'            PI_SrNo = Ln_Cnt
+'        Next
+'    End With
+'End Sub
+
+Private Sub LoadGRNTrans()
+Dim lb_found As Boolean
+Dim Ln_Cnt   As Integer
+Dim temp As String
+    
+InitializeGrid
+    
+    lb_found = MySeek(Gs_compcode & ls_TransType & txtTransNo, "ISSFind", PR_ICISSU)
+   
+    If lb_found Then
+        With GrdGRN
+            Do While Gs_compcode & ls_TransType & txtTransNo = PR_ICISSU("ISSFind")
+                .Row = .Rows - 1
+                .TextMatrix(.Row, 0) = PR_ICISSU("SerialNo")
+                 PI_SrNo = Val(.TextMatrix(.Row, 0))
+                .TextMatrix(.Row, 1) = Trim(PR_ICISSU("LocationCode1")) & Trim(PR_ICISSU("ItemClass")) & Trim(PR_ICISSU("ItemCode"))
+                .TextMatrix(.Row, 2) = Abs(PR_ICISSU("Quantity") & "")
+                .TextMatrix(.Row, 3) = PR_ICISSU("UnitCost")
+                .TextMatrix(.Row, 4) = Abs(Round(PR_ICISSU("Quantity") * PR_ICISSU("UnitCost"), 0))
+                .TextMatrix(.Row, 5) = Trim(PR_ICISSU("LocationCode1"))
+                .TextMatrix(.Row, 6) = PR_ICISSU("ItemClass")
+                .TextMatrix(.Row, 7) = PR_ICISSU("ItemCode")
+                .Rows = .Rows + 1
+                PR_ICISSU.MoveNext
+                If PR_ICISSU.EOF Then Exit Do
+             Loop
+            
+            If .TextMatrix(.Rows - 1, 1) = "" Then .RemoveItem .Rows - 1
+        End With
+        TotalGRN
+    Else
+        Call SetErr("Transaction Issue not found.", vbCritical)
+        txtLocCode.SetFocus
+    End If
+End Sub
+
+Private Sub grdGRN_DblClick()
+    With GrdGRN
+        If .Row > 0 Then
+            PI_CurRow = .Row
+        End If
+        
+        txtItemCode = .TextMatrix(.Row, 1)
+        txtqty = .TextMatrix(.Row, 2)
+        txtUnitPrice = Val(.TextMatrix(.Row, 3))
+        
+        If Mode = "A" Then
+            If MySeek(txtItemCode.Text, "ItemID", PR_IcItem) Then
+                TxtFactor = PR_IcItem.Fields("ItemFactor")
+                TxtUM = PR_IcItem.Fields("ItemUM")
+            End If
+
+        ElseIf Mode <> "A" Then
+            If MySeek(txtItemCode.Text, "ItemFind", PR_IcItem) Then
+                TxtFactor = PR_IcItem.Fields("ItemFactor")
+                TxtUM = PR_IcItem.Fields("ItemUM")
+            End If
+        Else
+            TxtFactor = 0
+            TxtUM = 0
+        End If
+        PS_RowClicked = "Y"
+    End With
+End Sub
+
+Private Sub txtValueDate_KeyDown(KeyCode As Integer, Shift As Integer)
+    If LastKey(KeyCode) Then
+       If txtValueDate.Value < DateValue(Gs_Fnperiod) Or txtValueDate.Value > DateValue(Gs_FnEndPeriod) Then
+         Call SetErr("Invalid Period.", vbCritical)
+         txtValueDate.SetFocus
+       Else
+        txtLocCode.SetFocus
+       End If
+    End If
+End Sub
+
+Public Sub setfrmenv(ls_mode As String)
+    txtLocCode.Enabled = IIf(ls_mode <> "D", True, False)
+    TxtPartyCode.Enabled = IIf(ls_mode <> "D", True, False)
+    txtRemarks.Enabled = IIf(ls_mode <> "D", True, False)
+    Frame2.Enabled = IIf(ls_mode <> "D", True, False)
+End Sub

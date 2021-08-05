@@ -1,0 +1,293 @@
+ %% PLEASE DO NOT MODIFY OR DELETE THIS FILE! %% 
+ %% This file contains information about the installation of an application. %% 
+ %% It will be used to automatically remove all application components from your computer if you choose to do so. %% 
+
+
+NOTE: Beginning of the bootstrapper section
+
+CONFIG: Title: "FSIB Financials 1.0"
+
+ACTION: RegKey: "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion", "SharedDLLs"
+
+ACTION: SystemFile: "C:\WINDOWS\SYSTEM\VB6STKIT.DLL"
+(File was not found or was an older version -- new file copied)
+
+ACTION: SystemFile: "C:\WINDOWS\SYSTEM\COMCAT.DLL"
+(File was not found or was an older version -- new file copied)
+
+ACTION: SystemFile: "C:\WINDOWS\SYSTEM\OLEPRO32.DLL"
+(File currently on disk was already up to date)
+
+ACTION: SystemFile: "C:\WINDOWS\SYSTEM\ASYCFILT.DLL"
+(File currently on disk was already up to date)
+
+ACTION: SystemFile: "C:\WINDOWS\SYSTEM\OLEAUT32.DLL"
+(File currently on disk was already up to date)
+
+ACTION: SystemFile: "C:\WINDOWS\SYSTEM\STDOLE2.TLB"
+(File currently on disk was already up to date)
+
+ACTION: SystemFile: "C:\WINDOWS\SYSTEM\msvbvm60.dll"
+(File currently on disk was already up to date)
+
+NOTE: End of the bootstrapper section
+
+NOTE: Now spawning the main Setup program 'Setup1.exe'....
+
+ACTION: CreateDir: "C:\Program Files\Shaheer Financials"
+
+ACTION: CreateDir: "\FSIB Financials"
+
+ACTION: ShellFolder: "FSIB Financials"
+
+ACTION: SharedFile: "C:\WINDOWS\SYSTEM\RDOCURS.DLL"
+(File was not found or was an older version -- new file copied)
+
+ACTION: SharedFile: "C:\WINDOWS\SYSTEM\MSRDO20.DLL"
+(File was not found or was an older version -- new file copied)
+
+ACTION: SharedFile: "C:\Program Files\Common Files\Designer\MSCDRUN.DLL"
+(File was not found or was an older version -- new file copied)
+
+ACTION: SharedFile: "C:\WINDOWS\SYSTEM\MSSTDFMT.DLL"
+(File was not found or was an older version -- new file copied)
+
+ACTION: SharedFile: "C:\WINDOWS\SYSTEM\MSDATGRD.OCX"
+(File was not found or was an older version -- new file copied)
+
+ACTION: SharedFile: "C:\WINDOWS\SYSTEM\MSCOMCT2.OCX"
+(File was not found or was an older version -- new file copied)
+
+ACTION: SharedFile: "C:\WINDOWS\SYSTEM\u252000.dll"
+(File was not found or was an older version -- new file copied)
+
+ACTION: SharedFile: "C:\WINDOWS\SYSTEM\u2lsamp1.dll"
+(File was not found or was an older version -- new file copied)
+
+ACTION: SharedFile: "C:\WINDOWS\SYSTEM\u2ldts.dll"
+(File was not found or was an older version -- new file copied)
+
+ACTION: SharedFile: "C:\WINDOWS\SYSTEM\u2lcom.dll"
+(File was not found or was an older version -- new file copied)
+
+ACTION: SharedFile: "C:\WINDOWS\SYSTEM\u2l2000.dll"
+(File was not found or was an older version -- new file copied)
+
+ACTION: SharedFile: "C:\WINDOWS\SYSTEM\u25dts.dll"
+(File was not found or was an older version -- new file copied)
+
+ACTION: SharedFile: "C:\WINDOWS\SYSTEM\u2fxls.dll"
+(File was not found or was an older version -- new file copied)
+
+ACTION: SharedFile: "C:\WINDOWS\SYSTEM\u2fwordw.dll"
+(File was not found or was an older version -- new file copied)
+
+ACTION: SharedFile: "C:\WINDOWS\SYSTEM\u2fwks.dll"
+(File was not found or was an older version -- new file copied)
+
+ACTION: SharedFile: "C:\WINDOWS\SYSTEM\u2ftext.dll"
+(File was not found or was an older version -- new file copied)
+
+ACTION: SharedFile: "C:\WINDOWS\SYSTEM\u2fsepv.dll"
+(File was not found or was an older version -- new file copied)
+
+ACTION: SharedFile: "C:\WINDOWS\SYSTEM\u2frtf.dll"
+(File was not found or was an older version -- new file copied)
+
+ACTION: SharedFile: "C:\WINDOWS\SYSTEM\u2frec.dll"
+(File was not found or was an older version -- new file copied)
+
+ACTION: SharedFile: "C:\WINDOWS\SYSTEM\u2fodbc.dll"
+(File was not found or was an older version -- new file copied)
+
+ACTION: SharedFile: "C:\WINDOWS\SYSTEM\u2fhtml.dll"
+(File was not found or was an older version -- new file copied)
+
+ACTION: SharedFile: "C:\WINDOWS\SYSTEM\u2fcr.dll"
+(File was not found or was an older version -- new file copied)
+
+ACTION: SharedFile: "C:\WINDOWS\SYSTEM\u2dapp.dll"
+(File was not found or was an older version -- new file copied)
+
+ACTION: SharedFile: "C:\WINDOWS\SYSTEM\u2dvim.dll"
+(File was not found or was an older version -- new file copied)
+
+ACTION: SharedFile: "C:\WINDOWS\SYSTEM\u2dpost.dll"
+(File was not found or was an older version -- new file copied)
+
+ACTION: SharedFile: "C:\WINDOWS\SYSTEM\u2dnotes.dll"
+(File was not found or was an older version -- new file copied)
+
+ACTION: SharedFile: "C:\WINDOWS\SYSTEM\u2dmapi.dll"
+(File was not found or was an older version -- new file copied)
+
+ACTION: SharedFile: "C:\WINDOWS\SYSTEM\u2ddisk.dll"
+(File was not found or was an older version -- new file copied)
+
+ACTION: SharedFile: "C:\WINDOWS\SYSTEM\p2soledb.dll"
+(File was not found or was an older version -- new file copied)
+
+ACTION: SharedFile: "C:\WINDOWS\SYSTEM\p2ssyb10.dll"
+(File was not found or was an older version -- new file copied)
+
+ACTION: SharedFile: "C:\WINDOWS\SYSTEM\p2ssql.dll"
+(File was not found or was an older version -- new file copied)
+
+ACTION: SharedFile: "C:\WINDOWS\SYSTEM\p2sora7.dll"
+(File was not found or was an older version -- new file copied)
+
+ACTION: SharedFile: "C:\WINDOWS\SYSTEM\p2sodbc.dll"
+(File was not found or was an older version -- new file copied)
+
+ACTION: SharedFile: "C:\WINDOWS\SYSTEM\P2smon.dll"
+(File was not found or was an older version -- new file copied)
+
+ACTION: SharedFile: "C:\WINDOWS\SYSTEM\p2sifmx.dll"
+(File was not found or was an older version -- new file copied)
+
+ACTION: SharedFile: "C:\WINDOWS\SYSTEM\p2irdao.dll"
+(File was not found or was an older version -- new file copied)
+
+ACTION: SharedFile: "C:\WINDOWS\SYSTEM\p2ctdao.dll"
+(File was not found or was an older version -- new file copied)
+
+ACTION: SharedFile: "C:\WINDOWS\SYSTEM\p2bxbse.dll"
+(File was not found or was an older version -- new file copied)
+
+ACTION: SharedFile: "C:\WINDOWS\SYSTEM\p2bdao.dll"
+(File was not found or was an older version -- new file copied)
+
+ACTION: SharedFile: "C:\WINDOWS\SYSTEM\Crxlat32.dll"
+(File was not found or was an older version -- new file copied)
+
+ACTION: SharedFile: "C:\WINDOWS\SYSTEM\mfc42.dll"
+(File was not found or was an older version -- new file copied)
+
+ACTION: SharedFile: "C:\WINDOWS\SYSTEM\Crpaig80.dll"
+(File was not found or was an older version -- new file copied)
+
+ACTION: PrivateFile: "C:\Program Files\Shaheer Financials\Implode.dll"
+(File was not found or was an older version -- new file copied)
+
+*** ERROR: C:\WINDOWS\SYSTEM\msvcrt.dll
+*** ERROR: An access violation occurred while copying the file.
+*** ERROR: (User Responded with 'Ignore')
+*** DURING THIS ACTION: PrivateFile: "C:\WINDOWS\SYSTEM\msvcrt.dll"
+
+*** ERROR: C:\WINDOWS\SYSTEM\msvcrt.dll
+*** ERROR: An access violation occurred while copying the file.
+*** ERROR: If you ignore a copy error, the file will not be copied.  The application may not function properly as a result.  Do you want to ignore the error?
+*** ERROR: (User Responded with 'Yes')
+*** DURING THIS ACTION: PrivateFile: "C:\WINDOWS\SYSTEM\msvcrt.dll"
+
+ACTION: SharedFile: "C:\WINDOWS\SYSTEM\crpe32.dll"
+(File was not found or was an older version -- new file copied)
+
+ACTION: SharedFile: "C:\WINDOWS\SYSTEM\Crystl32.OCX"
+(File was not found or was an older version -- new file copied)
+
+ACTION: SharedFile: "C:\WINDOWS\SYSTEM\MSADODC.OCX"
+(File was not found or was an older version -- new file copied)
+
+ACTION: SharedFile: "C:\WINDOWS\SYSTEM\MSFLXGRD.OCX"
+(File was not found or was an older version -- new file copied)
+
+ACTION: SharedFile: "C:\WINDOWS\SYSTEM\MSHFLXGD.OCX"
+(File was not found or was an older version -- new file copied)
+
+ACTION: SharedFile: "C:\WINDOWS\SYSTEM\MSMASK32.OCX"
+(File was not found or was an older version -- new file copied)
+
+ACTION: SharedFile: "C:\WINDOWS\SYSTEM\TABCTL32.OCX"
+(File was not found or was an older version -- new file copied)
+
+ACTION: SharedFile: "C:\WINDOWS\SYSTEM\COMCT332.OCX"
+(File was not found or was an older version -- new file copied)
+
+ACTION: SharedFile: "C:\WINDOWS\SYSTEM\MSCOMM32.OCX"
+(File was not found or was an older version -- new file copied)
+
+ACTION: SharedFile: "C:\WINDOWS\SYSTEM\Mscomctl.ocx"
+(File was not found or was an older version -- new file copied)
+
+ACTION: SharedFile: "C:\WINDOWS\SYSTEM\scrrun.dll"
+(File currently on disk was already up to date)
+
+ACTION: PrivateFile: "C:\WINDOWS\SYSTEM\craxdui.dll"
+(File was not found or was an older version -- new file copied)
+
+ACTION: PrivateFile: "C:\WINDOWS\SYSTEM\msado20.tlb"
+(File was not found or was an older version -- new file copied)
+
+ACTION: PrivateFile: "C:\WINDOWS\SYSTEM\Cdo32.dll"
+(File was not found or was an older version -- new file copied)
+
+ACTION: PrivateFile: "C:\Program Files\Shaheer Financials\FCM_Financials.exe"
+(File was not found or was an older version -- new file copied)
+
+ACTION: DllSelfRegister: "C:\WINDOWS\SYSTEM\MSRDO20.DLL"
+
+ACTION: DllSelfRegister: "C:\Program Files\Common Files\Designer\MSCDRUN.DLL"
+
+ACTION: DllSelfRegister: "C:\WINDOWS\SYSTEM\MSSTDFMT.DLL"
+
+ACTION: DllSelfRegister: "C:\WINDOWS\SYSTEM\MSDATGRD.OCX"
+
+ACTION: DllSelfRegister: "C:\WINDOWS\SYSTEM\MSCOMCT2.OCX"
+
+ACTION: DllSelfRegister: "C:\WINDOWS\SYSTEM\mfc42.dll"
+
+ACTION: DllSelfRegister: "C:\WINDOWS\SYSTEM\Crystl32.OCX"
+
+ACTION: DllSelfRegister: "C:\WINDOWS\SYSTEM\MSADODC.OCX"
+
+ACTION: DllSelfRegister: "C:\WINDOWS\SYSTEM\MSFLXGRD.OCX"
+
+ACTION: DllSelfRegister: "C:\WINDOWS\SYSTEM\MSHFLXGD.OCX"
+
+ACTION: DllSelfRegister: "C:\WINDOWS\SYSTEM\MSMASK32.OCX"
+
+ACTION: DllSelfRegister: "C:\WINDOWS\SYSTEM\TABCTL32.OCX"
+
+ACTION: DllSelfRegister: "C:\WINDOWS\SYSTEM\COMCT332.OCX"
+
+ACTION: DllSelfRegister: "C:\WINDOWS\SYSTEM\MSCOMM32.OCX"
+
+ACTION: DllSelfRegister: "C:\WINDOWS\SYSTEM\Mscomctl.ocx"
+
+ACTION: DllSelfRegister: "C:\WINDOWS\SYSTEM\scrrun.dll"
+
+ACTION: DllSelfRegister: "C:\WINDOWS\SYSTEM\craxdui.dll"
+
+*** ERROR: No entrypoint for DllRegisterServer() was found in 'C:\WINDOWS\SYSTEM\msado20.tlb'
+*** DURING THIS ACTION: DllSelfRegister: "C:\WINDOWS\SYSTEM\msado20.tlb"
+
+*** ERROR: An error occurred while registering the file 'C:\WINDOWS\SYSTEM\msado20.tlb'
+*** ERROR: (User Responded with 'Abort')
+*** DURING THIS ACTION: DllSelfRegister: "C:\WINDOWS\SYSTEM\msado20.tlb"
+
+*** WARNING: Setup is not yet complete.
+*** WARNING: If you quit now, this product will not be correctly installed.
+*** WARNING: Quit the setup of this product?
+*** WARNING: (User Responded with 'No')
+*** DURING THIS ACTION: DllSelfRegister: "C:\WINDOWS\SYSTEM\msado20.tlb"
+
+*** ERROR: An error occurred while registering the file 'C:\WINDOWS\SYSTEM\msado20.tlb'
+*** ERROR: (User Responded with 'Ignore')
+*** DURING THIS ACTION: DllSelfRegister: "C:\WINDOWS\SYSTEM\msado20.tlb"
+
+*** ERROR: LoadLibrary() failed while registering file 'C:\WINDOWS\SYSTEM\Cdo32.dll'
+*** DURING THIS ACTION: DllSelfRegister: "C:\WINDOWS\SYSTEM\Cdo32.dll"
+
+*** ERROR: An error occurred while registering the file 'C:\WINDOWS\SYSTEM\Cdo32.dll'
+*** ERROR: (User Responded with 'Ignore')
+*** DURING THIS ACTION: DllSelfRegister: "C:\WINDOWS\SYSTEM\Cdo32.dll"
+
+*** ERROR: An error occurred trying to create a program icon for 'FSIB Financials'
+*** ERROR: (User Responded with 'Ignore')
+*** DURING THIS ACTION: ShellLink: "FSIB Financials", "FSIB Financials"
+
+ACTION: RegKey: "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion", "App Paths\FCM_Financials.exe"
+
+ACTION: RegValue: "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\FCM_Financials.exe", ""
+
